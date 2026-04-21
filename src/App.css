@@ -152,7 +152,7 @@ button {
   box-shadow: 0 16px 36px rgba(29, 42, 58, 0.1);
 }
 
-.trendyProductImages::before,
+/* .trendyProductImages::before,
 .sdProductImages::before,
 .lpImageContainer::before,
 .rpImages::before,
@@ -165,14 +165,14 @@ button {
   border: 6px solid rgba(250, 241, 228, 0.9);
   z-index: 1;
   pointer-events: none;
-}
+} */
 
-.trendyProductImages::after,
+/*.trendyProductImages::after,
 .sdProductImages::after,
 .lpImageContainer::after,
 .rpImages::after,
-.productFullImg::after {
-  content: "OOJAS";
+ .productFullImg::after {
+  content: "OOJASd";
   position: absolute;
   left: 50%;
   top: 54%;
@@ -182,9 +182,9 @@ button {
   font-weight: 800;
   letter-spacing: 0.14em;
   pointer-events: none;
-}
+} */
 
-.trendyProductImages img,
+/* .trendyProductImages img,
 .sdProductImages img,
 .lpImageContainer img,
 .rpImages img,
@@ -192,7 +192,7 @@ button {
 .productThumb img {
   opacity: 0.06 !important;
   mix-blend-mode: luminosity;
-}
+} */
 
 .trendyProductContainer h4,
 .sdProductContainer h4,
