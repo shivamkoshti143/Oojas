@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 import { useSelector } from "react-redux";
 
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/oojas-logo.svg";
 import { Link } from "react-router-dom";
 
 import { RiMenu2Line } from "react-icons/ri";
@@ -51,22 +51,22 @@ const Navbar = () => {
             <ul>
               <li>
                 <Link to="/" onClick={scrollToTop}>
-                  HOME
+                  ABOUT US
                 </Link>
               </li>
               <li>
                 <Link to="/shop" onClick={scrollToTop}>
-                  SHOP
+                  JUICES
                 </Link>
               </li>
               <li>
                 <Link to="/blog" onClick={scrollToTop}>
-                  BLOG
+                  RECIPES
                 </Link>
               </li>
               <li>
                 <Link to="/about" onClick={scrollToTop}>
-                  ABOUT
+                  AYURVEDA
                 </Link>
               </li>
               <li>
@@ -139,22 +139,22 @@ const Navbar = () => {
               <ul>
                 <li>
                   <Link to="/" onClick={toggleMobileMenu}>
-                    HOME
+                    ABOUT US
                   </Link>
                 </li>
                 <li>
                   <Link to="/shop" onClick={toggleMobileMenu}>
-                    SHOP
+                    JUICES
                   </Link>
                 </li>
                 <li>
                   <Link to="/blog" onClick={toggleMobileMenu}>
-                    BLOG
+                    RECIPES
                   </Link>
                 </li>
                 <li>
                   <Link to="/about" onClick={toggleMobileMenu}>
-                    ABOUT
+                    AYURVEDA
                   </Link>
                 </li>
                 <li>

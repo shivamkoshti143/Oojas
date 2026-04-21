@@ -22,39 +22,34 @@ const AboutPage = () => {
   return (
     <>
       <div className="aboutSection">
-        <h2>About Uomo</h2>
+        <h2>About OOJAS</h2>
         <img src={about1} alt="" />
         <div className="aboutContent">
           <h3>Our Story</h3>
           <h4>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            We help people take control of their health and vitality with food
+            and drinks that are fresh, fulfilling, convenient and properly
+            delicious.
           </h4>
           <p>
-            Saw wherein fruitful good days image them, midst, waters upon, saw.
-            Seas lights seasons. Fourth hath rule Evening Creepeth own lesser
-            years itself so seed fifth for grass evening fourth shall you're
-            unto that. Had. Female replenish for yielding so saw all one to
-            yielding grass you'll air sea it, open waters subdue, hath. Brought
-            second Made. Be. Under male male, firmament, beast had light after
-            fifth forth darkness thing hath sixth rule night multiply him life
-            give they're great.
+            OOJAS exists to make healthy eating feel premium, accessible, fresh
+            and fun. Our recipes are rooted in Ayurvedic wisdom, full of vibrant
+            ingredients, and designed for real life: quick mornings, busy homes
+            and small rituals that children can grow up with.
           </p>
           <div className="content1">
             <div className="contentBox">
               <h5>Our Mission</h5>
               <p>
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                To make quick, easy and nourishing drinks the norm, replacing
+                additive-packed convenience with something joyful.
               </p>
             </div>
             <div className="contentBox">
               <h5>Our Vision</h5>
               <p>
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                To be the Jamie Oliver of the health and vitality food and
+                drinks world.
               </p>
             </div>
           </div>
@@ -63,14 +58,11 @@ const AboutPage = () => {
               <img src={about2} alt="" />
             </div>
             <div className="textContent">
-              <h5>The Company</h5>
+              <h5>Made With Love</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                sapien dignissim a elementum. Sociis metus, hendrerit mauris id
-                in. Quis sit sit ultrices tincidunt euismod luctus diam. Turpis
-                sodales orci etiam phasellus lacus id leo. Amet turpis nunc,
-                nulla massa est viverra interdum. Praesent auctor nulla morbi
-                non posuere mattis. Arcu eu id maecenas cras.
+                Every recipe is built around flavour first: fruit, spice,
+                texture and colour working together so wellness feels loving,
+                not bossy.
               </p>
             </div>
           </div>
@@ -78,7 +70,7 @@ const AboutPage = () => {
       </div>
       <Services />
       <div className="companyPartners">
-        <h5>Company Partners</h5>
+        <h5>Ingredient Notes</h5>
         <Swiper
           slidesPerView={1}
           loop={true}

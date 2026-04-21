@@ -80,7 +80,7 @@ const LimitedEdition = () => {
     <>
       <div className="limitedProductSection">
         <h2>
-          Limited <span>Edition</span>
+          Seasonal <span>Rituals</span>
         </h2>
         <div className="limitedProductSlider">
           <div className="swiper-button image-swiper-button-next">
@@ -146,7 +146,7 @@ const LimitedEdition = () => {
                     </div>
                     <div className="limitedProductInfo">
                       <div className="lpCategoryWishlist">
-                        <p>Dresses</p>
+                        <p>Subscriptions</p>
                         <FiHeart
                           onClick={() => handleWishlistClick(product.productID)}
                           style={{

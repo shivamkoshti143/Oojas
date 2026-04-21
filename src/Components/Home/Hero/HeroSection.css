@@ -1,11 +1,27 @@
 .heroMain {
-  background-color: #f4e5e0;
-  background-image: url("../../../Assets/slideshow-pattern.png");
-  background-size: cover;
+  min-height: 720px;
+  background:
+    radial-gradient(circle at 72% 27%, rgba(237, 181, 69, 0.44), transparent 18rem),
+    radial-gradient(circle at 84% 74%, rgba(175, 62, 94, 0.32), transparent 17rem),
+    linear-gradient(135deg, var(--oojas-navy) 0%, var(--oojas-blueberry) 56%, #263449 100%);
   padding: 0 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroMain::before {
+  content: "JUICY FRUITY HEALTHY FRESH";
+  position: absolute;
+  left: -2rem;
+  bottom: 2rem;
+  color: rgba(250, 241, 228, 0.06);
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 13vw, 13rem);
+  line-height: 0.8;
+  width: 110%;
 }
 
 .sectionleft {
@@ -13,14 +29,17 @@
   flex-direction: column;
   gap: 20px;
   width: 50%;
+  position: relative;
+  z-index: 2;
 }
 
 .sectionleft p {
   position: relative;
   padding-left: 50px;
-  color: #c22928;
+  color: var(--oojas-tumeric);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .sectionleft p::before {
@@ -28,7 +47,7 @@
   display: block;
   width: 35px;
   height: 2px;
-  background-color: #c32929;
+  background-color: var(--oojas-tumeric);
   position: absolute;
   left: 0;
   top: 50%;
@@ -36,9 +55,18 @@
 }
 
 .sectionleft h1 {
-  font-size: 70px;
+  color: var(--oojas-cream);
+  font-size: clamp(3rem, 6.4vw, 6.9rem);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
+  max-width: 850px;
+}
+
+.sectionleft span {
+  color: rgba(250, 241, 228, 0.86);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 620px;
 }
 
 .heroLink {
@@ -46,33 +74,35 @@
 }
 
 .sectionleft a {
-  text-decoration: none;
-  color: black;
-}
-
-.sectionleft a {
   position: relative;
+  text-decoration: none;
+  color: var(--oojas-navy);
+  background: var(--oojas-tumeric);
+  padding: 16px 28px;
+  border-radius: 999px;
+  box-shadow: 0 18px 40px rgba(237, 181, 69, 0.25);
 }
 
 .sectionleft a::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 75%;
-  border-bottom: 2px solid black;
+  left: 28px;
+  bottom: 11px;
+  width: 42%;
+  border-bottom: 2px solid var(--oojas-navy);
   transition: width 0.2s ease;
 }
 
 .sectionleft a:hover::after {
-  width: 100%;
+  width: calc(100% - 56px);
 }
 
 .sectionleft h5 {
   display: flex;
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .sectionright {
@@ -81,43 +111,133 @@
   align-items: center;
   justify-content: center;
   width: 50%;
+  min-height: 620px;
   position: relative;
+  z-index: 2;
 }
 
-.canvasModel {
-  height: 700px !important;
-}
-
-.heroColorBtn {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-  justify-content: center;
+.sunburst {
   position: absolute;
-  bottom: 130px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from -8deg,
+    rgba(237, 181, 69, 0.84) 0deg 8deg,
+    rgba(250, 241, 228, 0.14) 8deg 16deg
+  );
+  filter: drop-shadow(0 28px 70px rgba(0, 0, 0, 0.22));
 }
 
-.heroColorBtn button {
-  border-radius: 50%;
-  padding: 10px;
-  border: 1px solid white;
+.juiceStillLife {
+  position: relative;
+  width: min(480px, 88vw);
+  height: 560px;
+}
+
+.bottle {
+  position: absolute;
+  bottom: 42px;
+  width: 132px;
+  height: 380px;
+  border-radius: 48px 48px 28px 28px;
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.22);
+  border: 8px solid rgba(250, 241, 228, 0.9);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 34px 12px;
+}
+
+.bottle::before {
+  content: "";
+  position: absolute;
+  top: -56px;
+  width: 58px;
+  height: 76px;
+  border-radius: 20px 20px 8px 8px;
+  background: inherit;
+  border: 8px solid rgba(250, 241, 228, 0.9);
+  border-bottom: 0;
+}
+
+.bottle span {
+  color: var(--oojas-cream);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bottleTall {
+  left: 35px;
+  background: linear-gradient(#af3e5e, #602133);
+  transform: rotate(-8deg);
+}
+
+.bottleGold {
+  left: 175px;
+  height: 440px;
+  background: linear-gradient(#f4cf98, #edb545);
+  z-index: 2;
+}
+
+.bottleGold span {
+  color: var(--oojas-navy);
+}
+
+.bottleBerry {
+  right: 22px;
+  background: linear-gradient(#e799a2, #2f486d);
+  transform: rotate(8deg);
+}
+
+.ingredient {
+  position: absolute;
+  border-radius: 999px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+.ingredientLeaf {
+  right: 24px;
+  top: 72px;
+  width: 108px;
+  height: 58px;
+  border-radius: 100% 0 100% 0;
+  background: var(--oojas-green-apple);
+  transform: rotate(-18deg);
+}
+
+.ingredientApple {
+  left: 18px;
+  top: 132px;
+  width: 72px;
+  height: 72px;
+  background: var(--oojas-carrot);
+}
+
+.ingredientDot {
+  right: 112px;
+  bottom: 14px;
+  width: 96px;
+  height: 96px;
+  background: var(--oojas-banana);
 }
 
 @media screen and (max-width: 768px) {
   .heroMain {
     padding: 30px 60px;
+    min-height: auto;
   }
 
-  .sectionleft h1 {
-    font-size: 50px;
+  .sectionright {
+    min-height: 500px;
   }
 
-  .canvasModel {
-    height: 400px !important;
-  }
-
-  .heroColorBtn {
-    bottom: 60px;
+  .juiceStillLife {
+    transform: scale(0.78);
   }
 }
 
@@ -133,7 +253,7 @@
   }
 
   .sectionleft h1 {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   .sectionleft p {
@@ -142,14 +262,16 @@
 
   .sectionright {
     width: 100%;
+    min-height: 430px;
   }
 
-  .canvasModel {
-    height: 300px !important;
-    width: 250px !important;
+  .sunburst {
+    width: 330px;
+    height: 330px;
   }
 
-  .heroColorBtn {
-    bottom: 10px;
+  .juiceStillLife {
+    transform: scale(0.64);
+    transform-origin: center top;
   }
 }

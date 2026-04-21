@@ -67,21 +67,21 @@ const Product = () => {
 
   // Product Sizes
 
-  const sizes = ["XS", "S", "M", "L", "XL"];
+  const sizes = ["60ml", "250ml", "500ml", "3-day", "7-day"];
   const sizesFullName = [
-    "Extra Small",
-    "Small",
-    "Medium",
-    "Large",
-    "Extra Large",
+    "Sunshine Shot",
+    "Single Bottle",
+    "Sharing Bottle",
+    "Three Day Cleanse",
+    "Weekly Subscription",
   ];
-  const [selectSize, setSelectSize] = useState("S");
+  const [selectSize, setSelectSize] = useState("250ml");
 
   // Product Colors
 
-  const [highlightedColor, setHighlightedColor] = useState("#C8393D");
-  const colors = ["#222222", "#C8393D", "#E4E4E4"];
-  const colorsName = ["Black", "Red", "Grey"];
+  const [highlightedColor, setHighlightedColor] = useState("#EDB545");
+  const colors = ["#602133", "#EDB545", "#CDCB9A"];
+  const colorsName = ["Beetroot", "Turmeric", "Green Apple"];
 
   // Product Detail to Redux
 
@@ -92,10 +92,10 @@ const Product = () => {
   const handleAddToCart = () => {
     const productDetails = {
       productID: 14,
-      productName: "Lightweight Puffer Jacket",
-      productPrice: 90,
+      productName: "Gold-Dust Turmeric Glow Juice",
+      productPrice: 8,
       frontImg: productImg[0],
-      productReviews: "8k+ reviews",
+      productReviews: "8k+ sips",
     };
 
     const productInCart = cartItems.find(
@@ -136,13 +136,32 @@ const Product = () => {
         <div className="productShowCase">
           <div className="productGallery">
             <div className="productThumb">
-              <img src={product1} onClick={() => setCurrentImg(0)} alt="" />
-              <img src={product2} onClick={() => setCurrentImg(1)} alt="" />
-              <img src={product3} onClick={() => setCurrentImg(2)} alt="" />
-              <img src={product4} onClick={() => setCurrentImg(3)} alt="" />
+              <img
+                src={productImg[0]}
+                onClick={() => setCurrentImg(0)}
+                alt="Gold-Dust Turmeric Glow Juice view 1"
+              />
+              <img
+                src={productImg[1]}
+                onClick={() => setCurrentImg(1)}
+                alt="Gold-Dust Turmeric Glow Juice view 2"
+              />
+              <img
+                src={productImg[2]}
+                onClick={() => setCurrentImg(2)}
+                alt="Gold-Dust Turmeric Glow Juice view 3"
+              />
+              <img
+                src={productImg[3]}
+                onClick={() => setCurrentImg(3)}
+                alt="Gold-Dust Turmeric Glow Juice view 4"
+              />
             </div>
             <div className="productFullImg">
-              <img src={productImg[currentImg]} alt="" />
+              <img
+                src={productImg[currentImg]}
+                alt="Gold-Dust Turmeric Glow Juice"
+              />
               <div className="buttonsGroup">
                 <button onClick={prevImg} className="directionBtn">
                   <GoChevronLeft size={18} />
@@ -171,7 +190,7 @@ const Product = () => {
               </div>
             </div>
             <div className="productName">
-              <h1>Lightweight Puffer Jacket With a Hood</h1>
+              <h1>Gold-Dust Turmeric Glow Juice</h1>
             </div>
             <div className="productRating">
               <FaStar color="#FEC78A" size={10} />
@@ -179,22 +198,21 @@ const Product = () => {
               <FaStar color="#FEC78A" size={10} />
               <FaStar color="#FEC78A" size={10} />
               <FaStar color="#FEC78A" size={10} />
-              <p>8k+ reviews</p>
+              <p>8k+ sips</p>
             </div>
             <div className="productPrice">
-              <h3>$90</h3>
+              <h3>$8</h3>
             </div>
             <div className="productDescription">
               <p>
-                Phasellus sed volutpat orci. Fusce eget lore mauris vehicula
-                elementum gravida nec dui. Aenean aliquam varius ipsum, non
-                ultricies tellus sodales eu. Donec dignissim viverra nunc, ut
-                aliquet magna posuere eget.
+                A bright, creamy blend of turmeric, banana, ginger and citrus
+                made for slow mornings, quick resets and that golden little
+                lift your day was asking for.
               </p>
             </div>
             <div className="productSizeColor">
               <div className="productSize">
-                <p>Sizes</p>
+                <p>Format</p>
                 <div className="sizeBtn">
                   {sizes.map((size, index) => (
                     <Tooltip
@@ -218,7 +236,7 @@ const Product = () => {
                 </div>
               </div>
               <div className="productColor">
-                <p>Color</p>
+                <p>Blend</p>
                 <div className="colorBtn">
                   {colors.map((color, index) => (
                     <Tooltip
@@ -281,10 +299,10 @@ const Product = () => {
                 <span>SKU: </span>N/A
               </p>
               <p>
-                <span>CATEGORIES: </span>Casual & Urban Wear, Jackets, Men
+                <span>CATEGORIES: </span>Juices, Ayurveda, Sunshine Shots
               </p>
               <p>
-                <span>TAGS: </span>biker, black, bomber, leather
+                <span>TAGS: </span>turmeric, ginger, banana, vitality
               </p>
             </div>
           </div>

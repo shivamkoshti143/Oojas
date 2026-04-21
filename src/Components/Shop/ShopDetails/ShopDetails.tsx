@@ -81,9 +81,6 @@ const ShopDetails = () => {
     <>
       <div className="shopDetails">
         <div className="shopDetailMain">
-          <div className="shopDetails__left">
-            <Filter />
-          </div>
           <div className="shopDetails__right">
             <div className="shopDetailsSorting">
               <div className="shopDetailsBreadcrumbLink">
@@ -91,7 +88,7 @@ const ShopDetails = () => {
                   Home
                 </Link>
                 &nbsp;/&nbsp;
-                <Link to="/shop">The Shop</Link>
+                <Link to="/shop">OOJAS Shop</Link>
               </div>
               <div className="filterLeft" onClick={toggleDrawer}>
                 <IoFilterSharp />
@@ -118,18 +115,18 @@ const ShopDetails = () => {
             </div>
             <div className="shopDetailsProducts">
               <div className="shopDetailsProductsContainer">
-                {StoreData.slice(0, 6).map((product) => (
-                  <div className="sdProductContainer">
+                {StoreData.slice(0, 8).map((product) => (
+                  <div className="sdProductContainer" key={product.productID}>
                     <div className="sdProductImages">
                       <Link to="/Product" onClick={scrollToTop}>
                         <img
                           src={product.frontImg}
-                          alt=""
+                          alt={product.productName}
                           className="sdProduct_front"
                         />
                         <img
-                          src={product.backImg}
-                          alt=""
+                          src={product.backImg || product.frontImg}
+                          alt={product.productName}
                           className="sdProduct_back"
                         />
                       </Link>
@@ -145,7 +142,7 @@ const ShopDetails = () => {
                     </div>
                     <div className="sdProductInfo">
                       <div className="sdProductCategoryWishlist">
-                        <p>Dresses</p>
+                        <p>Juices & smoothies</p>
                         <FiHeart
                           onClick={() => handleWishlistClick(product.productID)}
                           style={{

@@ -22,37 +22,37 @@ const ContactPage = () => {
         <h2>Contact Us</h2>
         <div className="contactMap">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49206.16593395236!2d2.5776979486328124!3d39.57346430000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129793280de39c05%3A0x85d5f5ea839d6c2a!2sUOMO!5e0!3m2!1sen!2sin!4v1708798894132!5m2!1sen!2sin"
+            src="https://www.google.com/maps?q=Bristol%2C%20UK&output=embed"
             width="800"
             height="600"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="uomomap"
+            title="oojasmap"
           ></iframe>
         </div>
         <div className="contactInfo">
           <div className="contactAddress">
             <div className="address">
-              <h3>Store in London</h3>
+              <h3>OOJAS Kitchen</h3>
               <p>
-                1418 River Drive, Suite 35 Cottonhall, CA 9622
-                <br /> United Kingdom
+                Bristol, UK
+                <br /> Fresh prep and delivery hub
               </p>
               <p>
-                admin@dummymail.com
+                hello@oojas.co.uk
                 <br />
-                +44 20 7123 4567
+                +44 7801 993 928
               </p>
             </div>
             <div className="address">
-              <h3>Store in India</h3>
+              <h3>Wholesale & Events</h3>
               <p>
-                A-791, A-791, Bandra Reclamation Rd, Mumbai
-                <br /> Maharashtra
+                Pop-ups, subscriptions and nourishing office drops
+                <br /> Available on request
               </p>
               <p>
-                contact@dummymail.com
+                partnerships@oojas.co.uk
                 <br />
                 +44 20 7123 4567
               </p>
@@ -92,3 +92,4 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+

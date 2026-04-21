@@ -15,13 +15,13 @@ const Filter = () => {
   const [selectedSizes, setSelectedSizes] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [brandsData] = useState([
-    { name: "Adidas", count: 2 },
-    { name: "Balmain", count: 7 },
-    { name: "Balenciaga", count: 10 },
-    { name: "Burberry", count: 39 },
-    { name: "Kenzo", count: 95 },
-    { name: "Givenchy", count: 1092 },
-    { name: "Zara", count: 48 },
+    { name: "Juices", count: 12 },
+    { name: "Smoothies", count: 9 },
+    { name: "Sunshine Shots", count: 6 },
+    { name: "Subscriptions", count: 4 },
+    { name: "Cleanses", count: 5 },
+    { name: "Kids", count: 3 },
+    { name: "Ayurveda", count: 8 },
   ]);
 
   const handleColorChange = (color) => {
@@ -49,32 +49,32 @@ const Filter = () => {
   );
 
   const filterCategories = [
-    "Dresses",
-    "Shorts",
-    "Sweatshirts",
-    "Swimwear",
-    "Jackets",
-    "T-Shirts & Tops",
-    "Jeans",
-    "Trousers",
-    "Men",
-    "Jumpers & Cardigans",
+    "Cold-Pressed Juices",
+    "Smoothies",
+    "Sunshine Shots",
+    "Subscriptions",
+    "Seasonal Cleanses",
+    "Kids' Packs",
+    "Breakfast Blends",
+    "Protein Smoothies",
+    "Ayurveda Rituals",
+    "Gift Boxes",
   ];
 
   const filterColors = [
-    "#0B2472",
-    "#D6BB4F",
-    "#282828",
-    "#B0D6E8",
-    "#9C7539",
-    "#D29B47",
-    "#E5AE95",
-    "#D76B67",
-    "#BABABA",
-    "#BFDCC4",
+    "#1D2A3A",
+    "#6D6A47",
+    "#EDB545",
+    "#2F486D",
+    "#E799A2",
+    "#602133",
+    "#F4CF98",
+    "#BF946A",
+    "#E06346",
+    "#CDCB9A",
   ];
 
-  const filterSizes = ["XS", "S", "M", "L", "XL", "XXL"];
+  const filterSizes = ["60ml", "250ml", "500ml", "3-day", "7-day", "Family"];
 
   return (
     <div>
@@ -104,7 +104,7 @@ const Filter = () => {
               id="panel1-header"
               sx={{ padding: 0, marginBottom: 2 }}
             >
-              <h5 className="filterHeading">Color</h5>
+              <h5 className="filterHeading">Palette</h5>
             </AccordionSummary>
             <AccordionDetails sx={{ padding: 0 }}>
               {
@@ -134,7 +134,7 @@ const Filter = () => {
               id="panel1-header"
               sx={{ padding: 0, marginBottom: 2 }}
             >
-              <h5 className="filterHeading">Sizes</h5>
+              <h5 className="filterHeading">Format</h5>
             </AccordionSummary>
             <AccordionDetails sx={{ padding: 0 }}>
               <div className="sizeButtons">
@@ -161,7 +161,7 @@ const Filter = () => {
               id="panel1-header"
               sx={{ padding: 0, marginBottom: 2 }}
             >
-              <h5 className="filterHeading">Brands</h5>
+              <h5 className="filterHeading">Collections</h5>
             </AccordionSummary>
             <AccordionDetails sx={{ padding: 0 }}>
               {/* Search bar */}

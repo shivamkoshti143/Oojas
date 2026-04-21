@@ -35,7 +35,7 @@ const RelatedProducts = () => {
       <div className="relatedProductSection">
         <div className="relatedProducts">
           <h2>
-            RELATED <span>PRODUCTS</span>
+            You May <span>Love</span>
           </h2>
         </div>
         <div className="relatedProductSlider">
@@ -93,7 +93,7 @@ const RelatedProducts = () => {
 
                     <div className="relatedProductInfo">
                       <div className="rpCategoryWishlist">
-                        <p>Dresses</p>
+                        <p>Juices & smoothies</p>
                         <FiHeart
                           onClick={() => handleWishlistClick(product.productID)}
                           style={{

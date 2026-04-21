@@ -82,7 +82,7 @@ const Trendy = () => {
     <>
       <div className="trendyProducts">
         <h2>
-          Our Trendy <span>Products</span>
+          Fresh <span>Favourites</span>
         </h2>
         <div className="trendyTabs">
           <div className="tabs">
@@ -142,7 +142,7 @@ const Trendy = () => {
                     </div>
                     <div className="trendyProductInfo">
                       <div className="trendyProductCategoryWishlist">
-                        <p>Dresses</p>
+                        <p>Juices & smoothies</p>
                         <FiHeart
                           onClick={() => handleWishlistClick(product.productID)}
                           style={{
@@ -208,7 +208,7 @@ const Trendy = () => {
                       </div>
                       <div className="trendyProductInfo">
                         <div className="trendyProductCategoryWishlist">
-                          <p>Dresses</p>
+                          <p>Juices & smoothies</p>
                           <FiHeart
                             onClick={() =>
                               handleWishlistClick(product.productID)
@@ -276,7 +276,7 @@ const Trendy = () => {
                       </div>
                       <div className="trendyProductInfo">
                         <div className="trendyProductCategoryWishlist">
-                          <p>Dresses</p>
+                          <p>Juices & smoothies</p>
                           <FiHeart
                             onClick={() =>
                               handleWishlistClick(product.productID)
@@ -344,7 +344,7 @@ const Trendy = () => {
                       </div>
                       <div className="trendyProductInfo">
                         <div className="trendyProductCategoryWishlist">
-                          <p>Dresses</p>
+                          <p>Juices & smoothies</p>
                           <FiHeart
                             onClick={() =>
                               handleWishlistClick(product.productID)

@@ -1,0 +1,9 @@
+<svg width="226" height="72" viewBox="0 0 226 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OOJAS</title>
+  <desc id="desc">OOJAS juices, smoothies and shots of sunshine logo</desc>
+  <rect width="226" height="72" rx="36" fill="#1D2A3A"/>
+  <circle cx="40" cy="36" r="18" fill="#EDB545"/>
+  <circle cx="40" cy="36" r="9" fill="#FAF1E4"/>
+  <text x="68" y="43" fill="#FAF1E4" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="3.5">OOJAS</text>
+  <path d="M194 22C205 25 211 32 213 43C201 43 193 37 194 22Z" fill="#CDCB9A"/>
+</svg>

@@ -1,17 +1,235 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --oojas-navy: #1d2a3a;
+  --oojas-avocado: #6d6a47;
+  --oojas-tumeric: #edb545;
+  --oojas-blueberry: #2f486d;
+  --oojas-lychee: #e799a2;
+  --oojas-beetroot: #602133;
+  --oojas-banana: #f4cf98;
+  --oojas-ginger: #bf946a;
+  --oojas-carrot: #e06346;
+  --oojas-green-apple: #cdcb9a;
+  --oojas-red-apple: #af3e5e;
+  --oojas-cream: #faf1e4;
+  --oojas-ink: #182130;
+  --oojas-muted: #667064;
+  --oojas-radius: 28px;
+  --oojas-shadow: 0 24px 70px rgba(29, 42, 58, 0.16);
+  --font-heading: "Bowlby One SC", "Cooper Black", serif;
+  --font-body: "Poppins", sans-serif;
+}
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Jost", sans-serif;
+  box-sizing: border-box;
+  font-family: var(--font-body);
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--oojas-cream);
 }
 
 img {
-  background-color: #eff0f1;
+  background-color: var(--oojas-cream);
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 8%, rgba(237, 181, 69, 0.18), transparent 26rem),
+    radial-gradient(circle at 90% 18%, rgba(231, 153, 162, 0.18), transparent 24rem),
+    var(--oojas-cream);
+  color: var(--oojas-ink);
+}
+
+h1,
+h2,
+h3,
+.col-h3,
+.bannerh3 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.01em;
+  line-height: 0.96;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-body);
+}
+
+button {
+  border-radius: 999px;
+}
+
+::selection {
+  background: var(--oojas-tumeric);
+  color: var(--oojas-navy);
+}
+
+.MuiBadge-badge {
+  background-color: var(--oojas-carrot) !important;
+  color: var(--oojas-cream) !important;
+}
+
+.collectionLeft,
+.collectionTop,
+.box1,
+.box2,
+.bannerLeft,
+.bannerRight,
+.mainDeal,
+.drawerHeader {
+  border-radius: var(--oojas-radius);
+  box-shadow: var(--oojas-shadow);
+  overflow: hidden;
+}
+
+.collectionLeft {
+  background-image:
+    radial-gradient(circle at 18% 22%, var(--oojas-carrot) 0 4rem, transparent 4.2rem),
+    radial-gradient(circle at 86% 18%, var(--oojas-green-apple) 0 5rem, transparent 5.2rem),
+    linear-gradient(135deg, rgba(29, 42, 58, 0.18), rgba(29, 42, 58, 0.4)),
+    url("./Assets/Collection/collection1.jpg") !important;
+}
+
+.collectionTop {
+  background-image:
+    radial-gradient(circle at 20% 25%, var(--oojas-banana) 0 4rem, transparent 4.2rem),
+    linear-gradient(135deg, rgba(96, 33, 51, 0.12), rgba(29, 42, 58, 0.28)),
+    url("./Assets/Collection/collection2.jpg") !important;
+}
+
+.box1 {
+  background-image:
+    radial-gradient(circle at 82% 20%, var(--oojas-lychee) 0 4rem, transparent 4.2rem),
+    linear-gradient(135deg, rgba(29, 42, 58, 0.18), rgba(29, 42, 58, 0.38)),
+    url("./Assets/Collection/collection3.jpg") !important;
+}
+
+.box2 {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(237, 181, 69, 0.45), transparent 8rem),
+    var(--oojas-green-apple) !important;
+}
+
+.bannerLeft,
+.bannerRight {
+  background-size: cover !important;
+  background-blend-mode: multiply, normal;
+}
+
+.bannerLeft {
+  background-image:
+    radial-gradient(circle at 18% 20%, rgba(237, 181, 69, 0.8), transparent 8rem),
+    linear-gradient(135deg, rgba(96, 33, 51, 0.94), rgba(175, 62, 94, 0.78)),
+    url("./Assets/Banner/banner_1.jpg") !important;
+}
+
+.bannerRight {
+  background-image:
+    radial-gradient(circle at 82% 18%, rgba(205, 203, 154, 0.95), transparent 8rem),
+    linear-gradient(135deg, rgba(250, 241, 228, 0.94), rgba(244, 207, 152, 0.8)),
+    url("./Assets/Banner/banner_2.jpg") !important;
+}
+
+.trendyProductImages,
+.sdProductImages,
+.lpImageContainer,
+.rpImages,
+.productFullImg,
+.productThumb img {
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 28% 24%, rgba(237, 181, 69, 0.58), transparent 5rem),
+    radial-gradient(circle at 76% 72%, rgba(175, 62, 94, 0.38), transparent 6rem),
+    linear-gradient(145deg, var(--oojas-cream), #f7d9a8) !important;
+  box-shadow: 0 16px 36px rgba(29, 42, 58, 0.1);
+}
+
+.trendyProductImages::before,
+.sdProductImages::before,
+.lpImageContainer::before,
+.rpImages::before,
+.productFullImg::before {
+  content: "";
+  position: absolute;
+  inset: 16% 30%;
+  border-radius: 38px 38px 18px 18px;
+  background: linear-gradient(180deg, var(--oojas-tumeric), var(--oojas-carrot));
+  border: 6px solid rgba(250, 241, 228, 0.9);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.trendyProductImages::after,
+.sdProductImages::after,
+.lpImageContainer::after,
+.rpImages::after,
+.productFullImg::after {
+  content: "OOJAS";
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: var(--oojas-navy);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  pointer-events: none;
+}
+
+.trendyProductImages img,
+.sdProductImages img,
+.lpImageContainer img,
+.rpImages img,
+.productFullImg img,
+.productThumb img {
+  opacity: 0.06 !important;
+  mix-blend-mode: luminosity;
+}
+
+.trendyProductContainer h4,
+.sdProductContainer h4,
+.lpContainer h4,
+.productCartBtn button,
+.userNewReviewForm button,
+.contactForm button {
+  background: var(--oojas-navy) !important;
+  color: var(--oojas-cream) !important;
+  border: 0 !important;
+  letter-spacing: 0.06em;
+}
+
+.trendyProducts h2,
+.limitedProductSection h2,
+.relatedProducts h2,
+.instagram h2,
+.aboutSection h2,
+.contactSection h2 {
+  color: var(--oojas-navy);
+}
+
+.tabs p.active,
+.tabs p:hover,
+.productPrice h3,
+.productNameInfo p,
+.sdProductNameInfo p,
+.trendyProductNameInfo p {
+  color: var(--oojas-beetroot) !important;
+}
+
+.tabs p.active::after,
+.paginationNum p:first-child::after,
+.discoverMore p::after,
+.col-link a::after {
+  border-color: var(--oojas-tumeric) !important;
+  background-color: var(--oojas-tumeric) !important;
 }
 
 @media only screen and (max-width: 1025px) {

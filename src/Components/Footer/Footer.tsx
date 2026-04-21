@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/oojas-logo.svg";
 import paymentIcon from "../../Assets/paymentIcon.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -34,11 +34,11 @@ const Footer = () => {
               <img src={logo} alt="" />
             </div>
 
-            <p>1418 River Drive, Suite 35 Cottonhall, CA 9622 United States</p>
+            <p>Fresh & natural juices, smoothies and daily shots of sunshine.</p>
 
             <div className="footer_address">
-              <strong> sale@uomo.com </strong>
-              <strong> +1 246-345-0695 </strong>
+              <strong> hello@oojas.co.uk </strong>
+              <strong> +44 7801 993 928 </strong>
             </div>
 
             <div className="social_links">
@@ -51,17 +51,17 @@ const Footer = () => {
           </div>
 
           <div className="footer_content">
-            <h5>Company</h5>
+            <h5>Oojas</h5>
             <div className="links_container">
               <ul onClick={scrollToTop}>
                 <li>
                   <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/about">Career</Link>
+                  <Link to="/about">Our Vision</Link>
                 </li>
                 <li>
-                  <Link to="*">Affilates</Link>
+                  <Link to="/shop">Subscriptions</Link>
                 </li>
                 <li>
                   <Link to="/blog">Blog</Link>
@@ -77,19 +77,19 @@ const Footer = () => {
             <div className="links_container">
               <ul onClick={scrollToTop}>
                 <li>
-                  <Link to="/shop">New Arrivals</Link>
+                  <Link to="/shop">Juices</Link>
                 </li>
                 <li>
-                  <Link to="/shop">Accessories</Link>
+                  <Link to="/shop">Smoothies</Link>
                 </li>
                 <li>
-                  <Link to="/shop">Men</Link>
+                  <Link to="/shop">Sunshine Shots</Link>
                 </li>
                 <li>
-                  <Link to="/shop">Women</Link>
+                  <Link to="/shop">Cleanses</Link>
                 </li>
                 <li>
-                  <Link to="/shop">Shop All</Link>
+                  <Link to="/shop">Subscriptions</Link>
                 </li>
               </ul>
             </div>
@@ -122,8 +122,8 @@ const Footer = () => {
           <div className="footer_right">
             <h5>Subscribe</h5>
             <p>
-              Be the first to get the latest news about trends, promotions, and
-              much more!
+              Be the first to get fresh recipes, seasonal drops and nourishing
+              little rituals.
             </p>
 
             <form onSubmit={handleSubscribe}>
@@ -138,18 +138,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer_bottom">
-          <p>
-            © {getCurrentYear()} Uomo. All Rights Reserved | Made By{" "}
-            <a
-              href="https://github.com/shakti177"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "#C22928", textDecoration: "none" }}
-            >
-              Shakti Tamrakar
-            </a>{" "}
-            with ❤️
-          </p>
+          <p>Copyright {getCurrentYear()} OOJAS. All Rights Reserved.</p>
           <div className="footerLangCurrency">
             <div className="footerLang">
               <p>Language</p>
@@ -164,9 +153,9 @@ const Footer = () => {
               <p>Currency</p>
               <select name="currency" id="currency">
                 <option value="USD">$ USD</option>
-                <option value="INR">₹ INR</option>
-                <option value="EUR">€ EUR</option>
-                <option value="GBP">£ GBP</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
               </select>
             </div>
           </div>
@@ -177,3 +166,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

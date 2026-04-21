@@ -1,6 +1,9 @@
 .footer {
   padding: 30px 160px;
-  background-color: #e4e4e4;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(237, 181, 69, 0.2), transparent 18rem),
+    var(--oojas-navy);
+  color: var(--oojas-cream);
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -26,6 +29,7 @@
 
 .footer_logo_container img {
   background: none !important;
+  width: 160px;
 }
 
 .footer_left p {
@@ -76,7 +80,7 @@
 }
 
 .links_container ul li a {
-  color: black;
+  color: var(--oojas-cream);
   text-decoration: none;
   font-size: 14px;
   position: relative;
@@ -89,7 +93,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: black;
+  background-color: var(--oojas-tumeric);
   transition: width 0.3s ease-out;
 }
 
@@ -128,8 +132,8 @@
 
 .footer_right form button {
   padding: 10px 20px;
-  background-color: white;
-  color: black;
+  background-color: var(--oojas-tumeric);
+  color: var(--oojas-navy);
   border: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -159,7 +163,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  border-top: 1px solid #cfcdcd;
+  border-top: 1px solid rgba(250, 241, 228, 0.18);
   padding-top: 30px;
   gap: 20px;
 }
@@ -181,6 +185,7 @@
   outline: none;
   background-color: transparent;
   font-size: 14px;
+  color: var(--oojas-cream);
 }
 
 .footerCurrency {
@@ -194,6 +199,7 @@
   outline: none;
   background-color: transparent;
   font-size: 14px;
+  color: var(--oojas-cream);
 }
 
 @media screen and (max-width: 1210px) {

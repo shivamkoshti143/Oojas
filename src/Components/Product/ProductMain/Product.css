@@ -22,17 +22,22 @@
 .productThumb img {
   width: 80px;
   height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .productFullImg {
   position: relative;
+  width: min(520px, 100%);
 }
 
 .productFullImg img {
-  width: 520px;
-  height: 520px;
-  pointer-events: none;
-  background-color: #767676;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f7f1e6;
 }
 
 .buttonsGroup {
@@ -361,10 +366,6 @@
   .productCartBtn button {
     padding: 20px 40px;
   }
-  .productFullImg img {
-    width: 450px;
-    height: 450px;
-  }
 }
 
 @media screen and (max-width: 1210px) {
@@ -376,12 +377,6 @@
   .productShowCase {
     display: flex;
     gap: 30px;
-  }
-
-  .productFullImg img {
-    width: 420px;
-    height: 420px;
-    pointer-events: none;
   }
 
   .productCartBtn button {
@@ -410,7 +405,6 @@
 
   .productFullImg img {
     width: 100%;
-    height: auto;
   }
 
   .productDetails {
@@ -432,6 +426,16 @@
     height: 75px;
   }
 
+  .productCartQuantity {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .productCartBtn button {
+    width: 100%;
+    padding: 18px 24px;
+  }
+
   .buttonsGroup {
     position: absolute;
     top: 50%;
@@ -445,20 +449,12 @@
   .directionBtn {
     padding: 10px;
   }
-
-  .productCartBtn button {
-    padding: 20px 50px;
-  }
 }
 
 @media screen and (max-width: 320px) {
   .productThumb img {
     width: 65px;
     height: 65px;
-  }
-
-  .productCartBtn button {
-    padding: 20px 30px;
   }
 
   .sizeBtn button {

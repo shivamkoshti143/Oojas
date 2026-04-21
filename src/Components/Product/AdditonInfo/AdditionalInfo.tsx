@@ -46,52 +46,41 @@ const AdditionalInfo = () => {
             {activeTab === "aiTab1" && (
               <div className="aiTabDescription">
                 <div className="descriptionPara">
-                  <h3>Sed do eiusmod tempor incididunt ut labore</h3>
+                  <h3>Fresh, functional and properly delicious</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                    illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo.
+                    OOJAS blends are created to feel premium and accessible:
+                    vibrant ingredients, balanced flavour and no boring wellness
+                    lectures. Each bottle is designed as a small daily ritual
+                    that supports energy, nourishment and joy.
                   </p>
                 </div>
                 <div className="descriptionParaGrid">
                   <div className="descriptionPara">
-                    <h3>Why choose product?</h3>
+                    <h3>Why choose this blend?</h3>
                     <p>
                       <ul>
-                        <li>Creat by cotton fibric with soft and smooth</li>
-                        <li>
-                          Simple, Configurable (e.g. size, color, etc.), bundled
-                        </li>
-                        <li>Downloadable/Digital Products, Virtual Products</li>
+                        <li>Made with fresh fruit, spice and plant goodness</li>
+                        <li>Available as bottles, shots or subscription boxes</li>
+                        <li>Designed around Ayurvedic wisdom and real life</li>
                       </ul>
                     </p>
                   </div>
                   <div className="descriptionPara">
-                    <h3>Sample Number List</h3>
+                    <h3>How to enjoy</h3>
                     <p>
                       <ol>
-                        <li>Creat by cotton fibric with soft and smooth</li>
-                        <li>
-                          Simple, Configurable (e.g. size, color, etc.), bundled
-                        </li>
-                        <li>Downloadable/Digital Products, Virtual Products</li>
+                        <li>Shake gently before opening</li>
+                        <li>Drink chilled within the freshness window</li>
+                        <li>Pair with breakfast or a mid-afternoon reset</li>
                       </ol>
                     </p>
                   </div>
                 </div>
                 <div className="descriptionPara">
-                  <h3>Lining</h3>
+                  <h3>Ingredients</h3>
                   <p style={{ marginTop: "-10px" }}>
-                    100% Polyester, Main: 100% Polyester.
+                    Turmeric, banana, ginger, citrus, filtered water and a
+                    little OOJAS sunshine.
                   </p>
                 </div>
               </div>
@@ -102,24 +91,24 @@ const AdditionalInfo = () => {
             {activeTab === "aiTab2" && (
               <div className="aiTabAdditionalInfo">
                 <div className="additionalInfoContainer">
-                  <h6>Weight</h6>
-                  <p> 1.25 kg</p>
+                  <h6>Volume</h6>
+                  <p> 250ml</p>
                 </div>
                 <div className="additionalInfoContainer">
-                  <h6>Dimensions</h6>
-                  <p> 90 x 60 x 90 cm</p>
+                  <h6>Freshness</h6>
+                  <p> Drink chilled within 48 hours</p>
                 </div>
                 <div className="additionalInfoContainer">
-                  <h6>Size</h6>
-                  <p> XS, S, M, L, XL</p>
+                  <h6>Formats</h6>
+                  <p> Shot, bottle, cleanse, subscription</p>
                 </div>
                 <div className="additionalInfoContainer">
-                  <h6>Color</h6>
-                  <p> Black, Orange, White</p>
+                  <h6>Blend</h6>
+                  <p> Turmeric, ginger, banana, citrus</p>
                 </div>
                 <div className="additionalInfoContainer">
                   <h6>Storage</h6>
-                  <p> Relaxed fit shirt-style dress with a rugged</p>
+                  <p> Keep refrigerated and shake before serving</p>
                 </div>
               </div>
             )}
@@ -162,7 +151,7 @@ const AdditionalInfo = () => {
                             Nam libero tempore, cum soluta nobis est eligendi
                             optio cumque nihil impedit quo minus id quod maxime
                             placeat facere possimus, omnis voluptas assumenda
-                            est…
+                            est...
                           </p>
                         </div>
                       </div>
@@ -192,7 +181,7 @@ const AdditionalInfo = () => {
                             Nam libero tempore, cum soluta nobis est eligendi
                             optio cumque nihil impedit quo minus id quod maxime
                             placeat facere possimus, omnis voluptas assumenda
-                            est…
+                            est...
                           </p>
                         </div>
                       </div>
@@ -201,8 +190,7 @@ const AdditionalInfo = () => {
                   <div className="userNewReview">
                     <div className="userNewReviewMessage">
                       <h5>
-                        Be the first to review “Lightweight Puffer Jacket With a
-                        Hood”
+                        Be the first to review "Gold-Dust Turmeric Glow Juice"
                       </h5>
                       <p>
                         Your email address will not be published. Required
@@ -255,3 +243,7 @@ const AdditionalInfo = () => {
 };
 
 export default AdditionalInfo;
+
+
+
+
